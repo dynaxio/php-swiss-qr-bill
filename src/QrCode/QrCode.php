@@ -31,7 +31,7 @@ final class QrCode
     private Logo $qrCodeLogo;
     private WriterInterface $qrCodeWriter;
 
-    public static function create(string $data, string $fileFormat = null): self
+    public static function create(string $data, ?string $fileFormat = null): self
     {
         if (null === $fileFormat) {
             $fileFormat = self::FILE_FORMAT_SVG;
