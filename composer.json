@@ -1,5 +1,5 @@
 {
-    "name": "dynaxio/swiss-qr-bill",
+    "name": "dynaxio/php-swiss-qr-bill",
     "description": "A PHP library to create Swiss QR bills",
     "type": "library",
     "license": "MIT",
