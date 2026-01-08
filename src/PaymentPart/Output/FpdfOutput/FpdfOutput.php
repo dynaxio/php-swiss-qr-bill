@@ -235,7 +235,7 @@ final class FpdfOutput extends AbstractOutput implements OutputInterface
         $this->fpdf->MultiCell(
             $isReceiptPart ? 54 : 0,
             $isReceiptPart ? 3.3 : 4,
-            str_replace("text.", "", ($element->getText())),
+            str_replace("text.", "", mb_convert_encoding($element->getText(), 'ISO-8859-1', 'UTF-8')),
             self::BORDER,
             self::ALIGN_LEFT
         );
